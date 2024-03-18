@@ -1332,7 +1332,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "JoinUᴘᴅᴀᴛᴇs":
         buttons = [[
-            InlineKeyboardButton('🫵 SUBSCRIBE 🫵', url="https://t.me/mnbots_support"),
+            InlineKeyboardButton('SUBSCRIBE ', url="https://t.me/mnbots_support"),
         ],[
             InlineKeyboardButton('🍀 Movie Search Group 🍀', url="https://t.me/MN_MOVIES_GROUP")
         ],[
