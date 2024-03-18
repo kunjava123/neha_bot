@@ -219,8 +219,10 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
     CAPTION = """<b>{file_name}
-
-<b>💢 ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ : <a href='https://t.me/+iWHbh20hiow3M2I1'>MAIN CHANNEL</a></b>""" 
+<b>
+Movie group 1 https://t.me/MN_MOVIES_GROUP
+Movie group 2 https://t.me/mallu_movies3
+Movie group 3 https://t.me/malayalam_movies_mn</b>""" 
 
     IMDB_TEMPLATE_TXT = """
 IMDb Data:
