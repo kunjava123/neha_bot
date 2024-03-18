@@ -1338,9 +1338,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ],[
             InlineKeyboardButton('🍂 Movie channel 🍂', url="https://t.me/+iWHbh20hiow3M2I1")
         ],[
-            InlineKeyboardButton('🍁 Bots Update Channel 🍁', url="https://t.me/mnbots_support")
+            InlineKeyboardButton('🍁 Bots Update Channel 🍁', url="https://t.me/mnbots")
         ],[
-            InlineKeyboardButton('🥀 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ 🥀', url=GRP_LNK),
+            InlineKeyboardButton('🥀 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ 🥀', url="https://t.me/mnbots_support"),
         ],[
             InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
             InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close_data')
