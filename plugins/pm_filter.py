@@ -2015,7 +2015,7 @@ async def auto_filter(client, msg, spoll=False):
             return
         if len(message.text) < 100:
             search = message.text
-            m=await message.reply_sticker("CAACAgQAAxkBAAICU2WAFyjcEwW3demgG3CbGDPq6zEzAAJ4DwAC5nEBUGUzi8QpPu1MHgQ")
+            m=await message.reply_sticker("CAACAgUAAxkBAAKOsmYYkZzhw8zqs9nFrBf09Fqi5dkBAAI3DgACGS2xVHLSl8DuZSUJHgQ")
             search = search.lower()
             find = search.split(" ")
             search = ""
@@ -2044,7 +2044,7 @@ async def auto_filter(client, msg, spoll=False):
     else:
         message = msg.message.reply_to_message  # msg will be callback query
         search, files, offset, total_results = spoll
-        m=await message.reply_sticker("CAACAgQAAxkBAAICU2WAFyjcEwW3demgG3CbGDPq6zEzAAJ4DwAC5nEBUGUzi8QpPu1MHgQ")
+        m=await message.reply_sticker("CAACAgUAAxkBAAKOsmYYkZzhw8zqs9nFrBf09Fqi5dkBAAI3DgACGS2xVHLSl8DuZSUJHgQ")
         settings = await get_settings(message.chat.id)
         await msg.message.delete()
     pre = 'filep' if settings['file_secure'] else 'file'
@@ -2184,7 +2184,7 @@ async def auto_filter(client, msg, spoll=False):
                 await message.delete()
         except Exception as e:
             logger.exception(e)
-            m=await message.reply_sticker("CAACAgQAAx0CfU5vFQACBKtlhET6U2Bd6gI4fciQlKTzGWT_TwAC9hAAAlC74FPEm2DxqNeOmB4E") 
+            m=await message.reply_sticker("CAACAgUAAxkBAAKOsmYYkZzhw8zqs9nFrBf09Fqi5dkBAAI3DgACGS2xVHLSl8DuZSUJHgQ") 
             fek = await message.reply_text(text=cap, reply_markup=InlineKeyboardMarkup(btn))
             await m.delete()
             try:
