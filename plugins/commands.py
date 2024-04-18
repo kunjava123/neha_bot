@@ -1,3 +1,5 @@
+
+
 # Don't Remove Credit @movie_file_20
 # Subscribe YouTube Channel For Amazing Bot @movie_file_20
 # Ask Doubt on telegram @KingVJ01
@@ -59,9 +61,6 @@ async def start(client, message):
                     InlineKeyboardButton('🍀 Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ 🍀', callback_data='JoinUᴘᴅᴀᴛᴇs')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        m=await message.reply_sticker("CAACAgUAAx0CaXq83gABAbeGZfeasWDszo6lokstl2o6JcHfMRoAAjoCAAIN5LBXmXMjhZsX58YeBA") 
-        await asyncio.sleep(1)
-        await m.delete()
         await message.reply_photo(
             photo=random.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
