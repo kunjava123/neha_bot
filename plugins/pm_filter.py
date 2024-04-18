@@ -2015,7 +2015,6 @@ async def auto_filter(client, msg, spoll=False):
             return
         if len(message.text) < 100:
             search = message.text
-            m=await message.reply_sticker("CAACAgQAAxkBAAICU2WAFyjcEwW3demgG3CbGDPq6zEzAAJ4DwAC5nEBUGUzi8QpPu1MHgQ")
             search = search.lower()
             find = search.split(" ")
             search = ""
@@ -2032,7 +2031,6 @@ async def auto_filter(client, msg, spoll=False):
             files, offset, total_results = await get_search_results(message.chat.id ,search, offset=0, filter=True)
             settings = await get_settings(message.chat.id)
             if not files:
-                await m.delete()
                 if settings["spell_check"]:
                     return await advantage_spell_chok(client, msg)
                 else:
@@ -2044,7 +2042,6 @@ async def auto_filter(client, msg, spoll=False):
     else:
         message = msg.message.reply_to_message  # msg will be callback query
         search, files, offset, total_results = spoll
-        m=await message.reply_sticker("CAACAgQAAxkBAAICU2WAFyjcEwW3demgG3CbGDPq6zEzAAJ4DwAC5nEBUGUzi8QpPu1MHgQ")
         settings = await get_settings(message.chat.id)
         await msg.message.delete()
     pre = 'filep' if settings['file_secure'] else 'file'
@@ -2155,7 +2152,6 @@ async def auto_filter(client, msg, spoll=False):
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-            await m.delete()
             try:
                 if settings['auto_delete']:
                     await asyncio.sleep(300)
@@ -2170,11 +2166,9 @@ async def auto_filter(client, msg, spoll=False):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg") 
             hmm = await message.reply_photo(photo=poster, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-            await m.delete()
             try:
                if settings['auto_delete']:
                     await asyncio.sleep(300)
-                    m=await message.reply_sticker("CAACAgQAAx0CfU5vFQACBKtlhET6U2Bd6gI4fciQlKTzGWT_TwAC9hAAAlC74FPEm2DxqNeOmB4E")
                     await hmm.delete()
                     await message.delete()
             except KeyError:
@@ -2184,9 +2178,7 @@ async def auto_filter(client, msg, spoll=False):
                 await message.delete()
         except Exception as e:
             logger.exception(e)
-            m=await message.reply_sticker("CAACAgQAAx0CfU5vFQACBKtlhET6U2Bd6gI4fciQlKTzGWT_TwAC9hAAAlC74FPEm2DxqNeOmB4E") 
             fek = await message.reply_text(text=cap, reply_markup=InlineKeyboardMarkup(btn))
-            await m.delete()
             try:
                 if settings['auto_delete']:
                     await asyncio.sleep(300)
@@ -2199,7 +2191,6 @@ async def auto_filter(client, msg, spoll=False):
                 await message.delete()
     else:
         fuk = await message.reply_text(text=cap, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True)
-        await m.delete()
         try:
             if settings['auto_delete']:
                 await asyncio.sleep(300)
