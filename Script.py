@@ -220,9 +220,9 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 
     CAPTION = """<b>{file_name}
 <b>
-Movie group 1 https://t.me/MN_MOVIES_GROUP
-Movie group 2 https://t.me/mallu_movies3
-Movie group 3 https://t.me/malayalam_movies_mn</b>""" 
+Movie group 1 https://t.me/+EqSY4JxOm5E3MzA1
+Movie group 2 https://t.me/+baguWv_zqF8yOWI1
+Movie group 3 https://t.me/+aEVYxQ0YEsI0Mzk1</b>""" 
 
     IMDB_TEMPLATE_TXT = """
 IMDb Data:
